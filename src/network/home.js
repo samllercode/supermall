@@ -6,12 +6,14 @@ export function getHomeMultiData() {
   });
 }
 
-// export function getGoodsData(type, page) {
-//   return request({
-//     url:'/test/getGoods',
-//     params:{
-//       type,
-//       page
-//     }
-//   });
-// }
+export function getHomeGoods(type, page) {
+  return request({
+    url:'/home/data',
+    params:{
+      type,
+      page
+    }
+  })
+}
+
+

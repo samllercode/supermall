@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    <MainTabar></MainTabar>
-    <router-view></router-view>
+   <router-view></router-view>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import MainTabar from 'components/content/mainTabbar/MainTabar'
 export default {
   name: 'App',
   components: {
-    MainTabar,
+    MainTabar
   }
 }
 </script>

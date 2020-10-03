@@ -4,6 +4,7 @@ const Home =() => import('../views/home/Home')
 const Card =() => import('../views/card/Card')
 const Classify =() => import('../views/classify/Classify')
 const Profile =() => import('../views/profile/Profile')
+const Detail =() => import('../views/detail/Detail')
 
 const routes = [
   {    
@@ -13,22 +14,39 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component:Home
+    component:Home,
+    // meta:{
+    //   KeepAlive:true
+    // }
   },
   {
     path: '/card',
     name: 'Card',
-    component:Card
+    component:Card,
+    // meta:{
+    //   KeepAlive:true
+    // }
   },
   {
     path: '/classify',
     name: 'Classify',
-    component:Classify
+    component:Classify,
+    // meta:{
+    //   keepAlive:true
+    // }
   },
   {
     path: '/profile',
     name: 'Profile',
-    component:Profile
+    component:Profile,
+    // meta:{
+    //   KeepAlive:false
+    // }
+  },
+  {
+    //动态路由
+    path:'/detail/:id',
+    component:Detail
   }
 ]
 
